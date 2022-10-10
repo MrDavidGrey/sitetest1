@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grey Intel Designs | Welcome </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="log-page">
+    <!-- <section id="hero-page"> -->
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register
+            </button>
+        </div>
+
+        <div class="social-icons">
+            <img src="img/fb.png" width="30px" height="30px">
+            <img src="img/tw.png" width="30px" height="30px"> 
+            <img src="img/ig.png" width="30px" height="30px">
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="password" class="input-field" placeholder="Enter your password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="log-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="password" class="input-field" placeholder="Enter your password" required>
+            <input type="email" class="input-field" placeholder="Enter your email" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="log-btn">Register</button>
+        </form>
+        
+    </div>
+
+    <script>
+    var x = document.getElementById('login');
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    funtion register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    funtion login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
+
+</div>
+<!-- </section> -->
+
+<!-- Adding a script to make the toggle functional -->
+
+
+
+
+
+
+<footer>
+    <p> Grey Intel Designs, Copyright &copy; 2022</p>
+</footer>
+</body>
+</html>
